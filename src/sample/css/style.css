@@ -1,0 +1,25 @@
+.root{
+   -fx-font-size: 14px;
+   -fx-background-image: url("https://pm1.narvii.com/6568/4837b9463196a723eda785b124611b5a9cdfcf12_hq.jpg");
+   -fx-background-size: 100% 100%;
+}
+.button{
+    -fx-background-color: #D16BA5
+}
+.button: hover{
+    -fx-background-color: #86A8E7;
+    -fx-font-size: 15px;
+}
+
+.text-area{
+ -fx-control-inner-background: #5FFBF1;
+ -fx-font-size: 16px;
+ -fx-higlight-text-fill: #86A8E7;
+ -fx-font-weight: bold;
+}
+
+.text-field{
+   -fx-control-inner-background: #5FFBF1;
+   -fx-font-size: 16px;
+   -fx-font-style: italic;
+}

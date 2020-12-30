@@ -1,8 +1,18 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+    <stylesheets>
+        <URL value="@/sample/css/style.css" />
+    </stylesheets>
+    <TextArea fx:id="TextArea" prefWidth="400" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="TextField" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Button onAction="#clickBtnSend" onDragEntered="#clickBtnSend" onMouseDragEntered="#clickBtnSend" prefHeight="30.0" prefWidth="120.0" text="Send" textFill="#066b13" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Button onAction="#clickBtnSmile" text="=)" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Button onAction="#clickBtnSmileSad" text="(((" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+  </GridPane>
